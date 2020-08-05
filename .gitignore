@@ -127,3 +127,12 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Add config.py file
+config.py
+
+# Add additional files
+API_practice.ipynb
+random_numbeers.ipynb
+WeatherPy_read.ipynb
+Weather_Database.ipynb
