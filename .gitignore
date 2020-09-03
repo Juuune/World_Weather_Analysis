@@ -130,6 +130,7 @@ dmypy.json
 
 # Add config.py file
 config.py
+config2.py
 
 # Add additional files
 API_practice.ipynb
