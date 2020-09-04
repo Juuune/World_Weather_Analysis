@@ -134,6 +134,5 @@ config2.py
 
 # Add additional files
 API_practice.ipynb
-random_numbeers.ipynb
+random_numbers.ipynb
 WeatherPy_read.ipynb
-Weather_Database.ipynb
