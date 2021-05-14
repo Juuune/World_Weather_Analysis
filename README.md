@@ -3,8 +3,8 @@
 ### Overview 
 
 #### Background and purpose of the analysis
-Our clent help answering a question: How might we provide real-time suggestions for our client’s ideal vacation spot? My first task was to define what you meant by “ideal.” 
-So, over lots of considerations it's defined "that were (1) within a given range of latitude and longitude and that (2) provided the right kind of weather for the client.
+To help answering a question: How might we provide real-time suggestions for the ideal vacation spot? My first task was to define what we meant by “ideal” 
+So, over lots of considerations it's defined that were (1) within a given range of latitude and longitude and that (2) provided the right kind of weather for the customers.
 
 #### Techniques used
 - Python with pandas, numpy and scipy.stats for data analysis <br/>
