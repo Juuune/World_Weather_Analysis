@@ -48,7 +48,7 @@ To See the linear relationship between weather factor and latitude, first sepera
 Since weather factors influence each other, It is better to check the correlation between weather factors. From the coefficient, the maximum temperature shows the strongest correlation with other weather factors. </br>
 </br>
 
-![Correlation table of Weather factors (Northen Hemisphere)](https://github.com/Juuune/World_Weather_Analysis/blob/master/image/Correlation_North_Weather.PNG)</br>
+![Correlation table of Weather factors (Northen Hemisphere)](https://github.com/Juuune/World_Weather_Analysis/blob/master/image/Correlation_North_Weather.PNG)
 ![Correlation table of Weather factors (Southen Hemisphere)](https://github.com/Juuune/World_Weather_Analysis/blob/master/image/Correlation_North_Weather.PNG)</br>
 </br>
 </br>
