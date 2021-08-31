@@ -111,9 +111,9 @@ According to cutomer's preference, customer could make choose set of cities for 
 ## Next Step 
 
 ### Weather data model 
-To avoid overfitting feature elimination can be used, so the model would not use the entire weather factor. 
-Feature elimination and feature extraction can be done by principal componant analysis using sklearn.decomposition 
+To avoid overfitting the feature elimination can be used, so the model would not use the entire weather factors. 
+The feature elimination and the feature extraction can be done by the principal componant analysis using sklearn.decomposition 
 
 ### Vacation spot search 
-For better recommendation algorythm, other weather preference can be added to model (ex, Rain, Snow or Humidity at location) 
-Adding another preference would require some refactore vacation_search code with for loop and pandas loc. 
+For the better recommendation algorythm, other weather preferences can be added to model (ex, Rain, Snow or Humidity at location) 
+Adding another preference would require some refactoring of the vacation_search code with for loop and pandas loc. 
