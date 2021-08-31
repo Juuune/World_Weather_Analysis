@@ -8,7 +8,7 @@ So, over lots of considerations it's defined that were (1) within a given range 
 
 The Next question is "Is there a weather pattern by location?" for this task I first visualize the weather data and identify patterns using linear regression, correlation, clustering with k-means. </br>
 
-Finally, with all this consideration thw model can recommend the drean vacation location with travel route. 
+Finally, with all this consideration the model can recommend the dream vacation location with travel route. 
 
 #### Techniques used
 - Python with pandas, numpy and scipy.stats for data analysis <br/>
@@ -25,8 +25,8 @@ Finally, with all this consideration thw model can recommend the drean vacation 
 - Current weather data : Open Weather map API (www.openweathermap.org)</br>
 - Hotel info : Google API near by place </br>
 
-Before jumping into analysis, Data collection and data transformation was needed for simpler format and analysis usage. 
-First, random latitude and longitude number was genereated using np.random.uniform and it was stored in zip, together with matched city names from citipy, created the coordinates list. For the current weather information, Open Weather map API was used and current weather description with, wind humidity, max temperature, cloudiness data was added to weather dataframe. Addition to that the country code and time data was collected and transformed into '%Y-%m-%d %H:%M:%S' format for further use. </br>
+Before jumping into analysis, the data collection and the data transformation was needed for simpler format and analysis usage. 
+First, I generated random latitude and longitude numbers using np.random.uniform and it was stored in zip, together with matched city names from citipy, created the coordinates list. For the current weather information, Open Weather map API was used and current weather description with, wind humidity, max temperature, cloudiness data was added to weather dataframe. Addition to that the country code and the time data was collected and transformed into '%Y-%m-%d %H:%M:%S' format for further use. </br>
 
 </br>
 [World weather analysis](https://github.com/Juuune/World_Weather_Analysis/blob/master/WeatherAnalysis/WeatherPy.ipynb)</br>
