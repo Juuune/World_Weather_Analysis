@@ -46,7 +46,9 @@ To See the linear relationship between weather factor and latitude, first sepera
 
 Since weather factors influence each other, It is better to check the correlation between weather factors. From the coefficient, the maximum temperature shows the strongest correlation with other weather factors. </br>
 ![Correlation table of Weather factors (Northen Hemisphere)](https://github.com/Juuune/World_Weather_Analysis/blob/master/image/Correlation_North_Weather.PNG)</br>
-![Correlation table of Weather factors (Southen Hemisphere)](https://github.com/Juuune/World_Weather_Analysis/blob/master/image/Correlation_North_Weather.PNG)
+![Correlation table of Weather factors (Southen Hemisphere)](https://github.com/Juuune/World_Weather_Analysis/blob/master/image/Correlation_North_Weather.PNG)</br>
+
+
 
 ### Step 2. World weather data clustering model 
 
@@ -55,12 +57,12 @@ To help find patterns or groups of weather data the unsupervised learning model 
 [World weather data ML modeling](https://github.com/Juuune/World_Weather_Analysis/blob/master/WeatherAnalysis/Weather_ML_Model.ipynb)</br>
 
 ![Weather data clustering with K-means : k=2](https://github.com/Juuune/World_Weather_Analysis/blob/master/image/3D_plot_Temp%26Hum%26Cloud.PNG)</br>
-![Weather data clustering with K-means : k=3](https://github.com/Juuune/World_Weather_Analysis/blob/master/image/3D_plot_3clusters.PNG)</br>
-![Weather data clustering with K-means : k=4](https://github.com/Juuune/World_Weather_Analysis/blob/master/image/3D_plot_4clusters.PNG)</br>
 ![Weather data clustering with K-means : k=5](https://github.com/Juuune/World_Weather_Analysis/blob/master/image/3D_plot_5clusters.PNG)</br>
 
 To Decide best number of cluster the elbow curve analysis was used. According to the curve the elbow lies between 4 and 5 clusters. </br>
 ![Elbow curve plot](https://github.com/Juuune/World_Weather_Analysis/blob/master/image/ElbowCurve.PNG)</br>
+
+
 
 ### Step 3. Customized vacation spot search 
 
@@ -71,7 +73,6 @@ For the better view for the available location options, created the Gmap with we
 [Vacation location analysis](https://github.com/Juuune/World_Weather_Analysis/blob/master/WeatherAnalysis/VacaionPy.ipynb)</br>
 [Searching for ideal vacation spot with current weather info](https://github.com/Juuune/World_Weather_Analysis/blob/master/ItineraryAnalysis/Vacation_Search.ipynb) </br>
 
-
 #### Sample Itinerary Rcommendation 
 
 According to cutomer's preference, customer could make choose set of cities for a dream vacation from recommended search result. With this set of cities, the vacation itinerary code would suggest ideal travel route for the driving. </br>
@@ -81,11 +82,16 @@ According to cutomer's preference, customer could make choose set of cities for 
 ![Select vacation spots from recommended locations](https://github.com/Juuune/World_Weather_Analysis/blob/master/image/Gmap_itinerary/WeatherPy_travel_map_markers.png)</br>
 ![Travel route with selected cities](https://github.com/Juuune/World_Weather_Analysis/blob/master/image/Gmap_itinerary/WeatherPy_travel_map.png)</br>
 
+
+
+
 ## Challenges 
 
 ### API data extraction challenge
 
 ### Weather data modeling challenge
+
+
 
 ## Next Step 
 
