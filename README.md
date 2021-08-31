@@ -23,6 +23,8 @@ So, over lots of considerations it's defined that were (1) within a given range 
 
 Before jumping into analysis, Data collection and data transformation was needed for simpler format and analysis usage. 
 First, random latitude and longitude number was genereated using np.random.uniform and it was stored in zip, together with matched city names from citipy, created the coordinates list. For the current weather information, Open Weather map API was used and current weather description with, wind humidity, max temperature, cloudiness data was added to weather dataframe. Addition to that the country code and time data was collected and transformed into '%Y-%m-%d %H:%M:%S' format for further use. </br>
+
+
 [World weather analysis](https://github.com/Juuune/World_Weather_Analysis/blob/master/WeatherAnalysis/WeatherPy.ipynb)</br>
 
 
@@ -42,6 +44,7 @@ First, random latitude and longitude number was genereated using np.random.unifo
 #### Step 2. World weather data clustering model 
 
 To help find patterns or groups of weather data the unsupervised learning model was used on 4 weather facotrs(max temperature, humidity, cloudiness, wind speed).</br>
+
 [World weather data ML modeling](https://github.com/Juuune/World_Weather_Analysis/blob/master/WeatherAnalysis/Weather_ML_Model.ipynb)</br>
 
 #### Step 3. Customized vacation spot search 
