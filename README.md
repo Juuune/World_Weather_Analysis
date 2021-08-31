@@ -44,8 +44,10 @@ To See the linear relationship between weather factor and latitude, first sepera
 </br>
 ![Linear Regression Model on the Northen Hemisphere and Temperature](https://github.com/Juuune/World_Weather_Analysis/blob/master/image/Regression_North_Temp.PNG)</br>
 ![Linear Regression Model on the Northen Hemisphere and Wind Speed](https://github.com/Juuune/World_Weather_Analysis/blob/master/image/Regression_North_Wind.PNG)</br>
-
+</br>
 Since weather factors influence each other, It is better to check the correlation between weather factors. From the coefficient, the maximum temperature shows the strongest correlation with other weather factors. </br>
+</br>
+
 ![Correlation table of Weather factors (Northen Hemisphere)](https://github.com/Juuune/World_Weather_Analysis/blob/master/image/Correlation_North_Weather.PNG)</br>
 ![Correlation table of Weather factors (Southen Hemisphere)](https://github.com/Juuune/World_Weather_Analysis/blob/master/image/Correlation_North_Weather.PNG)</br>
 </br>
@@ -56,14 +58,18 @@ Since weather factors influence each other, It is better to check the correlatio
 ### Step 2. World weather data clustering model 
 
 To help find patterns or groups of weather data the unsupervised learning model was used on 4 weather facotrs(max temperature, humidity, cloudiness, wind speed). With this Model I can understand whether there is a pattern of weather by location. </br>
+</br>
 
 [World weather data ML modeling](https://github.com/Juuune/World_Weather_Analysis/blob/master/WeatherAnalysis/Weather_ML_Model.ipynb)</br>
 </br>
 ![Weather data clustering with K-means : k=4](https://github.com/Juuune/World_Weather_Analysis/blob/master/image/3D_plot_4clusters.PNG)</br>
 ![Weather data clustering with K-means : k=5](https://github.com/Juuune/World_Weather_Analysis/blob/master/image/3D_plot_5clusters.PNG)</br>
 </br>
+
+</br>
 To Decide best number of cluster the elbow curve analysis was used. According to the curve the elbow lies between 4 and 5 clusters. </br>
 </br>
+
 ![Elbow curve plot](https://github.com/Juuune/World_Weather_Analysis/blob/master/image/ElbowCurve.PNG)</br>
 
 </br>
