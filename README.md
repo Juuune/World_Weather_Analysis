@@ -30,22 +30,39 @@ First, random latitude and longitude number was genereated using np.random.unifo
 
 #### Step 1. World weather data exploration   
 
-
+From the scatter plots, there is obvious pattern on maximum temperature by latitute. other Weather factor also shows some pattern but is doesn't look linear pattern. 
 [World weather analysis](https://github.com/Juuune/World_Weather_Analysis/blob/master/WeatherAnalysis/WeatherPy.ipynb)</br>
-[World weather linear regression analysis](https://github.com/Juuune/World_Weather_Analysis/blob/master/WeatherAnalysis/WorldWeather_Regression.ipynb)</br>
 
 ![Latitute vs Max Temperature scatter plot](https://github.com/Juuune/World_Weather_Analysis/blob/master/image/CityLatitudenTemp.png)</br>
+![Latitute vs Humidity scatter plot](https://github.com/Juuune/World_Weather_Analysis/blob/master/image/CityLatitudenHumidity.png)</br>
+![Latitute vs Cloudiness scatter plot](https://github.com/Juuune/World_Weather_Analysis/blob/master/image/CityLatitudenCloud.png)</br>
+![Latitute vs Wind Speed scatter plot](https://github.com/Juuune/World_Weather_Analysis/blob/master/image/CityLatitudenWindSpeed.png)</br>
+
+To See the linear relationship between weather factor and latitude, first seperate the weather data into northern hemisphere and southern hemisphere. Then plot the data with linear regression model to see the linear pattern. </br>
+[World weather linear regression analysis](https://github.com/Juuune/World_Weather_Analysis/blob/master/WeatherAnalysis/WorldWeather_Regression.ipynb)</br>
 
 ![Linear Regression Model on the Northen Hemisphere and Temperature](https://github.com/Juuune/World_Weather_Analysis/blob/master/image/Regression_North_Temp.PNG)</br>
+![Linear Regression Model on the Northen Hemisphere and Humidity](https://github.com/Juuune/World_Weather_Analysis/blob/master/image/Regression_North_Hum.PNG)</br>
+![Linear Regression Model on the Northen Hemisphere and Cloudiness](https://github.com/Juuune/World_Weather_Analysis/blob/master/image/Regression_North_Cloud.PNG)</br>
+![Linear Regression Model on the Northen Hemisphere and Wind Speed](https://github.com/Juuune/World_Weather_Analysis/blob/master/image/Regression_North_Wind.PNG)</br>
 
+Since weather factors influence each other, It is better to check the correlation between weather factors. From the coefficient, the maximum temperature shows the strongest correlation with other weather factors. 
 ![Correlation table of Weather factors (Northen Hemisphere)](https://github.com/Juuune/World_Weather_Analysis/blob/master/image/Correlation_North_Weather.PNG)</br>
 ![Correlation table of Weather factors (Southen Hemisphere)](https://github.com/Juuune/World_Weather_Analysis/blob/master/image/Correlation_North_Weather.PNG)
 
 #### Step 2. World weather data clustering model 
 
-To help find patterns or groups of weather data the unsupervised learning model was used on 4 weather facotrs(max temperature, humidity, cloudiness, wind speed).</br>
+To help find patterns or groups of weather data the unsupervised learning model was used on 4 weather facotrs(max temperature, humidity, cloudiness, wind speed). With this Model I can understand whether there is a pattern of weather by location. </br>
 
 [World weather data ML modeling](https://github.com/Juuune/World_Weather_Analysis/blob/master/WeatherAnalysis/Weather_ML_Model.ipynb)</br>
+
+![Weather data clustering with K-means : k=2](https://github.com/Juuune/World_Weather_Analysis/blob/master/image/3D_plot_Temp%26Hum%26Cloud.PNG)</br>
+![Weather data clustering with K-means : k=3](https://github.com/Juuune/World_Weather_Analysis/blob/master/image/3D_plot_3clusters.PNG)</br>
+![Weather data clustering with K-means : k=4](https://github.com/Juuune/World_Weather_Analysis/blob/master/image/3D_plot_4clusters.PNG)</br>
+![Weather data clustering with K-means : k=5](https://github.com/Juuune/World_Weather_Analysis/blob/master/image/3D_plot_5clusters.PNG)</br>
+
+To Decide best number of cluster the elbow curve analysis was used. According to the curve the elbow lies between 4 and 5 clusters. </br>
+![Elbow curve plot](https://github.com/Juuune/World_Weather_Analysis/blob/master/image/ElbowCurve.PNG)</br>
 
 #### Step 3. Customized vacation spot search 
 For the customized vacation spot recommendation, the lodging information and preferred weather input code was needed. 
@@ -61,10 +78,21 @@ According to cutomer's preference, customer could make choose set of cities for 
 
 [Search for the ideal vacation spot according to customer's preferences](https://github.com/Juuune/World_Weather_Analysis/blob/master/IternaryAnalysis/Vacation_Search.ipynb) </br>
 [Setting ideal itinerary for selected cities](https://github.com/Juuune/World_Weather_Analysis/blob/master/IternaryAnalysis/Vacation_itinerary.ipynb)</br>
-![Travel route with selected cities](https://github.com/Juuune/World_Weather_Analysis/blob/master/image/Gmap_itinerary/WeatherPy_travel_map.png)
+![Select vacation spots from recommended locations](https://github.com/Juuune/World_Weather_Analysis/blob/master/image/Gmap_itinerary/WeatherPy_travel_map_markers.png)</br>
+![Travel route with selected cities](https://github.com/Juuune/World_Weather_Analysis/blob/master/image/Gmap_itinerary/WeatherPy_travel_map.png)</br>
 
 ### Challenges 
 
 #### API data extraction challenge
 
 #### Weather data modeling challenge
+
+### Next Step 
+
+#### Weather data model 
+To avoid overfitting feature elimination can be used, so the model would not use the entire weather factor. 
+Feature elimination and feature extraction can be done by principal componant analysis using sklearn.decomposition 
+
+#### Vacation spot search 
+For better recommendation algorythm, other weather preference can be added to model (ex, Rain, Snow or Humidity at location) 
+Adding another preference would require some refactore vacation_search code with for loop and pandas loc. 
