@@ -3,8 +3,12 @@
 ![Dream Vacation Spots with weather heatmap](https://github.com/Juuune/World_Weather_Analysis/blob/master/image/Heatmap_Hotel.PNG)
 
 #### Background and purpose of the analysis
-To help answering a question"How might we provide real-time suggestions for the ideal vacation spot?" The first task was to define what we meant by “ideal” 
-So, over lots of considerations it's defined that were (1) within a given range of latitude and longitude and that (2) provided the right kind of weather for the customers.
+To help answering a question "How might we provide real-time suggestions for the ideal vacation spot?" The first task was to define what we meant by “ideal” 
+So, over lots of considerations it's defined that were (1) within a given range of latitude and longitude and that (2) provided the right kind of weather for the customers.</br>
+
+The Next question is "Is there a weather pattern by location?" for this task I first visualize the weather data and identify patterns using linear regression, correlation, clustering with k-means. </br>
+
+Finally, with all this consideration thw model can recommend the drean vacation location with travel route. 
 
 #### Techniques used
 - Python with pandas, numpy and scipy.stats for data analysis <br/>
