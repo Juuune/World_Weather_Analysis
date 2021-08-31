@@ -14,9 +14,9 @@ So, over lots of considerations it's defined that were (1) within a given range 
 - Gmaps with heatmap layer and marker for world weather data visualization <br/>
 - jupyter notebook, git 
 
-### Analysis 
+## Analysis 
 
-#### Data management
+### Data management
 - Location : Randomly generated coordinates and corresponding city names from citypy </br>
 - Current weather data : Open Weather map API (www.openweathermap.org)</br>
 - Hotel info : Google API near by place </br>
@@ -28,7 +28,7 @@ First, random latitude and longitude number was genereated using np.random.unifo
 [World weather analysis](https://github.com/Juuune/World_Weather_Analysis/blob/master/WeatherAnalysis/WeatherPy.ipynb)</br>
 
 
-#### Step 1. World weather data exploration   
+### Step 1. World weather data exploration   
 
 From the scatter plots, there is obvious pattern on maximum temperature by latitute. other Weather factor also shows some pattern but is doesn't look linear pattern. 
 [World weather analysis](https://github.com/Juuune/World_Weather_Analysis/blob/master/WeatherAnalysis/WeatherPy.ipynb)</br>
@@ -42,15 +42,13 @@ To See the linear relationship between weather factor and latitude, first sepera
 [World weather linear regression analysis](https://github.com/Juuune/World_Weather_Analysis/blob/master/WeatherAnalysis/WorldWeather_Regression.ipynb)</br>
 
 ![Linear Regression Model on the Northen Hemisphere and Temperature](https://github.com/Juuune/World_Weather_Analysis/blob/master/image/Regression_North_Temp.PNG)</br>
-![Linear Regression Model on the Northen Hemisphere and Humidity](https://github.com/Juuune/World_Weather_Analysis/blob/master/image/Regression_North_Hum.PNG)</br>
-![Linear Regression Model on the Northen Hemisphere and Cloudiness](https://github.com/Juuune/World_Weather_Analysis/blob/master/image/Regression_North_Cloud.PNG)</br>
 ![Linear Regression Model on the Northen Hemisphere and Wind Speed](https://github.com/Juuune/World_Weather_Analysis/blob/master/image/Regression_North_Wind.PNG)</br>
 
-Since weather factors influence each other, It is better to check the correlation between weather factors. From the coefficient, the maximum temperature shows the strongest correlation with other weather factors. 
+Since weather factors influence each other, It is better to check the correlation between weather factors. From the coefficient, the maximum temperature shows the strongest correlation with other weather factors. </br>
 ![Correlation table of Weather factors (Northen Hemisphere)](https://github.com/Juuune/World_Weather_Analysis/blob/master/image/Correlation_North_Weather.PNG)</br>
 ![Correlation table of Weather factors (Southen Hemisphere)](https://github.com/Juuune/World_Weather_Analysis/blob/master/image/Correlation_North_Weather.PNG)
 
-#### Step 2. World weather data clustering model 
+### Step 2. World weather data clustering model 
 
 To help find patterns or groups of weather data the unsupervised learning model was used on 4 weather facotrs(max temperature, humidity, cloudiness, wind speed). With this Model I can understand whether there is a pattern of weather by location. </br>
 
@@ -64,7 +62,8 @@ To help find patterns or groups of weather data the unsupervised learning model 
 To Decide best number of cluster the elbow curve analysis was used. According to the curve the elbow lies between 4 and 5 clusters. </br>
 ![Elbow curve plot](https://github.com/Juuune/World_Weather_Analysis/blob/master/image/ElbowCurve.PNG)</br>
 
-#### Step 3. Customized vacation spot search 
+### Step 3. Customized vacation spot search 
+
 For the customized vacation spot recommendation, the lodging information and preferred weather input code was needed. 
 From the customer's preferred temperature input the prefered city was selected and nearby lodging informations for cities was parsed from google API.
 For the better view for the available location options, created the Gmap with weather heatmap and hotel info marker.</br>
@@ -73,7 +72,8 @@ For the better view for the available location options, created the Gmap with we
 [Searching for ideal vacation spot with current weather info](https://github.com/Juuune/World_Weather_Analysis/blob/master/ItineraryAnalysis/Vacation_Search.ipynb) </br>
 
 
-##### Sample Itinerary Rcommendation 
+#### Sample Itinerary Rcommendation 
+
 According to cutomer's preference, customer could make choose set of cities for a dream vacation from recommended search result. With this set of cities, the vacation itinerary code would suggest ideal travel route for the driving. </br>
 
 [Search for the ideal vacation spot according to customer's preferences](https://github.com/Juuune/World_Weather_Analysis/blob/master/IternaryAnalysis/Vacation_Search.ipynb) </br>
@@ -81,18 +81,18 @@ According to cutomer's preference, customer could make choose set of cities for 
 ![Select vacation spots from recommended locations](https://github.com/Juuune/World_Weather_Analysis/blob/master/image/Gmap_itinerary/WeatherPy_travel_map_markers.png)</br>
 ![Travel route with selected cities](https://github.com/Juuune/World_Weather_Analysis/blob/master/image/Gmap_itinerary/WeatherPy_travel_map.png)</br>
 
-### Challenges 
+## Challenges 
 
-#### API data extraction challenge
+### API data extraction challenge
 
-#### Weather data modeling challenge
+### Weather data modeling challenge
 
-### Next Step 
+## Next Step 
 
-#### Weather data model 
+### Weather data model 
 To avoid overfitting feature elimination can be used, so the model would not use the entire weather factor. 
 Feature elimination and feature extraction can be done by principal componant analysis using sklearn.decomposition 
 
-#### Vacation spot search 
+### Vacation spot search 
 For better recommendation algorythm, other weather preference can be added to model (ex, Rain, Snow or Humidity at location) 
 Adding another preference would require some refactore vacation_search code with for loop and pandas loc. 
