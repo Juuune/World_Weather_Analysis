@@ -51,7 +51,7 @@ To See the linear relationship between weather factor and latitude, first sepera
 </br>
 Since weather factors influence each other, It is better to check the correlation between weather factors. From the coefficient, the maximum temperature shows the strongest correlation with other weather factors. </br>
 </br>
-Correlation table of Weather factors vs. Northen Hemisphere                     Correlation table of Weather factors (Southen Hemisphere)</br>
+##### Correlation table of Weather factors vs. Northen Hemisphere and Southern Hemisphere
 ![Correlation table of Weather factors (Northen Hemisphere)](https://github.com/Juuune/World_Weather_Analysis/blob/master/image/Correlation_North_Weather.PNG)
 ![Correlation table of Weather factors (Southen Hemisphere)](https://github.com/Juuune/World_Weather_Analysis/blob/master/image/Correlation_South_Weather.PNG)</br>
 </br>
@@ -66,9 +66,10 @@ To help find patterns or groups of weather data the unsupervised learning model 
 
 [World weather data ML modeling](https://github.com/Juuune/World_Weather_Analysis/blob/master/WeatherAnalysis/Weather_ML_Model.ipynb)</br>
 </br>
-Weather data clustering with K-means : k=4</br>
+##### Weather data clustering with K-means : k=4</br>
 ![Weather data clustering with K-means : k=4](https://github.com/Juuune/World_Weather_Analysis/blob/master/image/3D_plot_4clusters.PNG)</br>
-Weather data clustering with K-means : k=5</br>
+</br>
+##### Weather data clustering with K-means : k=5</br>
 ![Weather data clustering with K-means : k=5](https://github.com/Juuune/World_Weather_Analysis/blob/master/image/3D_plot_5clusters.PNG)</br>
 </br>
 
@@ -98,9 +99,9 @@ According to cutomer's preference, customer could make choose set of cities for 
 [Search for the ideal vacation spot according to customer's preferences](https://github.com/Juuune/World_Weather_Analysis/blob/master/IternaryAnalysis/Vacation_Search.ipynb) </br>
 [Setting ideal itinerary for selected cities](https://github.com/Juuune/World_Weather_Analysis/blob/master/IternaryAnalysis/Vacation_itinerary.ipynb)</br>
 </br>
-Select vacation spots from recommended locations</br>
+##### Select vacation spots from recommended locations</br>
 ![Select vacation spots from recommended locations](https://github.com/Juuune/World_Weather_Analysis/blob/master/image/Gmap_itinerary/WeatherPy_travel_map_markers.png)</br>
-Travel route with selected citie</br>
+##### Travel route with selected citie</br>
 ![Travel route with selected cities](https://github.com/Juuune/World_Weather_Analysis/blob/master/image/Gmap_itinerary/WeatherPy_travel_map.png)</br>
 
 
